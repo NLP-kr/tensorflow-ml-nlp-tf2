@@ -110,7 +110,11 @@ venv.bak/
 .mypy_cache/
 
 data_in_test/
+<<<<<<< HEAD
 sh/
 *.csv
 *.npy
 *.zip
+=======
+sh/
+>>>>>>> 5b61646fcd791819168cd32c499154303cd50b2e
