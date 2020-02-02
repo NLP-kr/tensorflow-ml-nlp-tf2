@@ -1,8 +1,7 @@
-.ipynb_checkpoints/*
+.ipynb_checkpoints/
 data/
-checkpoint/
-graphs/
-weight.*
+src/
+.idea/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -13,6 +12,7 @@ __pycache__/
 *.so
 
 # Distribution / packaging
+sh/
 .Python
 build/
 develop-eggs/
@@ -108,5 +108,8 @@ venv.bak/
 
 # mypy
 .mypy_cache/
-.DS_Store
-.idea/
+
+
+bert_checkpoint/
+data_out/
+larva-kor-plus-base-cased-pytorch/
