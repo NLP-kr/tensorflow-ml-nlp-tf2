@@ -4,6 +4,9 @@ import json
 
 import numpy as np
 import pandas as pd
+from tqdm import tqdm
+
+from konlpy.tag import Okt
 
 
 FILTERS = "([~.,!?\"':;)(])"
@@ -47,7 +50,18 @@ def data_tokenizer(data):
     # 값들을 넘겨 준다.
     return [word for word in words if word]
 
-def load_vocabulary(path, vocab_path):
+
+def prepro_like_morphlized(data):
+    morph_analyzer = Okt()
+    result_data = list()
+    for seq in tqdm(data):
+        morphlized_seq = " ".join(morph_analyzer.morphs(seq.replace(' ', '')))
+        result_data.append(morphlized_seq)
+
+    return result_data
+
+
+def load_vocabulary(path, vocab_path, tokenize_as_morph=False):
     # 사전을 담을 배열 준비한다.
     vocabulary_list = []
     # 사전을 구성한 후 파일로 저장 진행한다.
@@ -64,9 +78,9 @@ def load_vocabulary(path, vocab_path):
             # 판다스의 데이터 프레임을 통해서
             # 질문과 답에 대한 열을 가져 온다.
             question, answer = list(data_df['Q']), list(data_df['A'])
-#             if DEFINES.tokenize_as_morph:  # 형태소에 따른 토크나이져 처리
-#                 question = prepro_like_morphlized(question)
-#                 answer = prepro_like_morphlized(answer)
+            if tokenize_as_morph:  # 형태소에 따른 토크나이져 처리
+                question = prepro_like_morphlized(question)
+                answer = prepro_like_morphlized(answer)
             data = []
             # 질문과 답변을 extend을
             # 통해서 구조가 없는 배열로 만든다.
@@ -118,7 +132,7 @@ def make_vocabulary(vocabulary_list):
     return char2idx, idx2char
 
 
-def enc_processing(value, dictionary):
+def enc_processing(value, dictionary, tokenize_as_morph=False):
     # 인덱스 값들을 가지고 있는
     # 배열이다.(누적된다.)
     sequences_input_index = []
@@ -126,8 +140,8 @@ def enc_processing(value, dictionary):
     # 길이를 가지고 있다.(누적된다.)
     sequences_length = []
     # 형태소 토크나이징 사용 유무
-#     if DEFINES.tokenize_as_morph:
-#         value = prepro_like_morphlized(value)
+    if tokenize_as_morph:
+        value = prepro_like_morphlized(value)
 
     # 한줄씩 불어온다.
     for sequence in value:
@@ -168,7 +182,7 @@ def enc_processing(value, dictionary):
     return np.asarray(sequences_input_index), sequences_length
 
 
-def dec_output_processing(value, dictionary):
+def dec_output_processing(value, dictionary, tokenize_as_morph=False):
     # 인덱스 값들을 가지고 있는
     # 배열이다.(누적된다)
     sequences_output_index = []
@@ -176,8 +190,8 @@ def dec_output_processing(value, dictionary):
     # 길이를 가지고 있다.(누적된다)
     sequences_length = []
     # 형태소 토크나이징 사용 유무
-#     if DEFINES.tokenize_as_morph:
-#         value = prepro_like_morphlized(value)
+    if tokenize_as_morph:
+        value = prepro_like_morphlized(value)
     # 한줄씩 불어온다.
     for sequence in value:
         # FILTERS = "([~.,!?\"':;)(])"
@@ -191,7 +205,7 @@ def dec_output_processing(value, dictionary):
         # 그 값을 넣어 주고 시작한다.
         # 문장에서 스페이스 단위별로 단어를 가져와서 딕셔너리의
         # 값인 인덱스를 넣어 준다.
-        sequence_index = [dictionary[STD]] + [dictionary[word] for word in sequence.split()]
+        sequence_index = [dictionary[STD]] + [dictionary[word] if word in dictionary else dictionary[UNK] for word in sequence.split()]
         # 문장 제한 길이보다 길어질 경우 뒤에 토큰을 자르고 있다.
         if len(sequence_index) > MAX_SEQUENCE:
             sequence_index = sequence_index[:MAX_SEQUENCE]
@@ -210,13 +224,13 @@ def dec_output_processing(value, dictionary):
     return np.asarray(sequences_output_index), sequences_length
 
 
-def dec_target_processing(value, dictionary):
+def dec_target_processing(value, dictionary, tokenize_as_morph=False):
     # 인덱스 값들을 가지고 있는
     # 배열이다.(누적된다)
     sequences_target_index = []
     # 형태소 토크나이징 사용 유무
-#     if DEFINES.tokenize_as_morph:
-#         value = prepro_like_morphlized(value)
+    if tokenize_as_morph:
+        value = prepro_like_morphlized(value)
     # 한줄씩 불어온다.
     for sequence in value:
         # FILTERS = "([~.,!?\"':;)(])"
@@ -226,7 +240,7 @@ def dec_target_processing(value, dictionary):
         # 문장에서 스페이스 단위별로 단어를 가져와서
         # 딕셔너리의 값인 인덱스를 넣어 준다.
         # 디코딩 출력의 마지막에 END를 넣어 준다.
-        sequence_index = [dictionary[word] for word in sequence.split()]
+        sequence_index = [dictionary[word] if word in dictionary else dictionary[UNK] for word in sequence.split()]
         # 문장 제한 길이보다 길어질 경우 뒤에 토큰을 자르고 있다.
         # 그리고 END 토큰을 넣어 준다
         if len(sequence_index) >= MAX_SEQUENCE:
