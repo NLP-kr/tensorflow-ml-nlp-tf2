@@ -1,16 +1,16 @@
 FROM tensorflow/tensorflow:2.0.0-py3
 MAINTAINER taekyoon <tgchoi03@gmail.com>
 
-# RUN apt-get update -y \
-# && apt-get install -y wget language-pack-ko openjdk-8-jdk curl git-core locales
+RUN apt-get update -y \
+&& apt-get install -y wget language-pack-ko openjdk-8-jdk curl git-core locales
 
-# RUN apt-get install -y locales language-pack-ko
-# ENV LANG ko_KR.UTF-8
-# ENV LANGUAGE ko_KR:en
-# ENV LC_ALL ko_KR.UTF-8
-# RUN locale-gen ko_KR.UTF-8 \
-# && update-locale LANG=ko_KR.UTF-8 \
-# && dpkg-reconfigure locales
+RUN apt-get install -y locales language-pack-ko
+ENV LANG ko_KR.UTF-8
+ENV LANGUAGE ko_KR:en
+ENV LC_ALL ko_KR.UTF-8
+RUN locale-gen ko_KR.UTF-8 \
+&& update-locale LANG=ko_KR.UTF-8 \
+&& dpkg-reconfigure locales
 
 RUN apt install wget
 RUN wget https://cmake.org/files/v3.14/cmake-3.14.3-Linux-x86_64.sh \
@@ -28,7 +28,7 @@ RUN pip install konlpy cmake
 
 # RUN pip install gensim soynlp soyspacing bokeh networkx selenium lxml pyldavis sentencepiece
 
-RUN pip install jupyter pandas html5lib seaborn matplotlib nltk
+RUN pip install jupyter pandas html5lib seaborn matplotlib nltk tqdm transformers mxnet gluonnlp sklearn 
 RUN jupyter notebook --generate-config --allow-root
 RUN echo "c.NotebookApp.password = u'sha1:6a3f528eec40:6e896b6e4828f525a6e20e5411cd1c8075d68619'" >> /root/.jupyter/jupyter_notebook_config.py
 EXPOSE 8888
