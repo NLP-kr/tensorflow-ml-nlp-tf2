@@ -1,0 +1,13 @@
+numpy 
+jupyter 
+pandas 
+html5lib 
+seaborn 
+matplotlib 
+nltk 
+tqdm 
+transformers 
+mxnet 
+gluonnlp 
+sklearn 
+wordcloud
