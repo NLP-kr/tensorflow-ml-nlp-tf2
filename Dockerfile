@@ -1,4 +1,4 @@
-FROM tensorflow/tensorflow:2.0.0-py3
+FROM tensorflow/tensorflow:2.1.0-py3
 MAINTAINER taekyoon <tgchoi03@gmail.com>
 
 RUN apt-get update -y \
@@ -28,10 +28,15 @@ RUN pip install konlpy cmake
 
 # RUN pip install gensim soynlp soyspacing bokeh networkx selenium lxml pyldavis sentencepiece
 
-RUN pip install jupyter pandas html5lib seaborn matplotlib nltk tqdm transformers mxnet gluonnlp sklearn 
-RUN jupyter notebook --generate-config --allow-root
-RUN echo "c.NotebookApp.password = u'sha1:6a3f528eec40:6e896b6e4828f525a6e20e5411cd1c8075d68619'" >> /root/.jupyter/jupyter_notebook_config.py
-EXPOSE 8888
+COPY requirements.txt .
+RUN pip install -r requirements.txt
+RUN rm requirements.txt
+# RUN pip install numpy jupyter pandas html5lib seaborn matplotlib nltk tqdm transformers mxnet gluonnlp sklearn wordcloud
+RUN python -c 'import nltk; nltk.download("punkt")'
+
+# RUN jupyter notebook --generate-config --allow-root
+# RUN echo "c.NotebookApp.password = u'sha1:6a3f528eec40:6e896b6e4828f525a6e20e5411cd1c8075d68619'" >> /root/.jupyter/jupyter_notebook_config.py
+EXPOSE 8889
 
 WORKDIR /workspace/practice
-ENTRYPOINT jupyter notebook --allow-root --ip=0.0.0.0 --port=8888 --no-browser
+ENTRYPOINT jupyter notebook --allow-root --ip=0.0.0.0 --port=8889 --no-browser && jupyter notebook list
