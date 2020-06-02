@@ -20,10 +20,6 @@
 
 - [MaLSTM을 활용한 유사도 모델](./5.3.3_Quora_LSTM.ipynb)
 
-## 부록
-
-- [개선된 MaLSTM 모델](./Appendix/5.3.3_Quora_LSTM_Appendix.ipynb)
-
 
 <!--
 ## QuoraQuestionPairs (Link 정리 해서 공유)
