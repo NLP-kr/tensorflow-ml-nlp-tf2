@@ -28,7 +28,7 @@ RUN pip install konlpy cmake
 
 # RUN pip install gensim soynlp soyspacing bokeh networkx selenium lxml pyldavis sentencepiece
 
-COPY ../requirements.txt .
+COPY requirements.txt .
 RUN pip install -r requirements.txt
 RUN rm requirements.txt
 RUN pip install setGPU
