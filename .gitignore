@@ -103,5 +103,10 @@ venv.bak/
 # mypy
 .mypy_cache/
 
+# other unnecessary file types
+*.npy
+*.old
+*.csv
+
 .DS_Store
 .idea/
