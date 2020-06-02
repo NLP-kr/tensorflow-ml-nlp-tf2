@@ -1,6 +1,6 @@
 # tensorflow-ml-nlp-tf2
 
-## Docker 실행
+## Jupyter Docker 실행
 
 - `bash build_jupyter_cpu.sh` 또는 `bash build_jupyter_gpu.sh`를 실행하면 docker image 생성
 - `bash exec_jupyter_cpu.sh` 또는 `bash exec_jupyter_gpu.sh`를 실행하면 docker환경에서 jupyter가 실행
