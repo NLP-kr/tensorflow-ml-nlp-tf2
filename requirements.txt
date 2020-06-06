@@ -12,3 +12,4 @@ gluonnlp
 sklearn 
 wordcloud
 gensim
+xgboost
