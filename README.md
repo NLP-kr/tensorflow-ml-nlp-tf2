@@ -11,17 +11,9 @@
 
 본 리파지토리는 텐서플로우와 머신러닝으로 시작하는 자연어처리 책과 같이 활용하여 공부하시면 더욱 도움이 되실겁니다.
 
-
-## 필요한 라이브러리들 (Reuquirements)
-1. Python3
-2. Tensorflow==2.0.1
-4. numpy
-5. pandas
-6. matplot
-
-
 ## 설치방법 (Environments)
 ```
+conda create -n {사용할 환경 이름} python=3.6
 pip install -r requirements.txt
 ```
 
@@ -40,6 +32,8 @@ conda install python=3.6
 <!-- >> - `tensorflow-gpu>=1.0,<=1.4` 의 경우 `CUDA 8.0`을 설치해주시기 바랍니다. -->
 
 ## Jupyter Docker 실행
+
+Docker 환경 사용시 19.03 이후 버전을 사용하길 권장합니다.
 
 - `bash build_jupyter_cpu.sh` 또는 `bash build_jupyter_gpu.sh`를 실행하면 docker image을 생성합니다.
 - `bash exec_jupyter_cpu.sh` 또는 `bash exec_jupyter_gpu.sh`를 실행하면 docker환경에서 jupyter가 실행됩니다.
@@ -65,8 +59,8 @@ conda install python=3.6
 
 
 ## 문의사항 (Inquiries)
-[Pull Request](https://github.com/NLP-kr/tensorflow-ml-nlp/pulls)는 언제든 환영입니다.
-문제나 버그, 혹은 궁금한 사항이 있으면 [이슈](https://github.com/NLP-kr/tensorflow-ml-nlp/issues)에 글을 남겨주세요.
+[Pull Request](https://github.com/NLP-kr/tensorflow-ml-nlp-tf2/pulls)는 언제든 환영입니다.
+문제나 버그, 혹은 궁금한 사항이 있으면 [이슈](https://github.com/NLP-kr/tensorflow-ml-nlp-tf2/issues)에 글을 남겨주세요.
 
 **이슈를 확인하기 전에 Wiki에 도큐먼트 먼저 보시고 이슈에 글을 남겨주세요!
 
