@@ -14,6 +14,7 @@
 ## 설치방법 (Environments)
 ```
 conda create -n {사용할 환경 이름} python=3.6
+conda activate {사용할 환경 이름}
 pip install -r requirements.txt
 ```
 
@@ -55,7 +56,7 @@ Docker 환경 사용시 19.03 이후 버전을 사용하길 권장합니다.
 **자연어 처리 심화** - 챗봇 모델을 통해 보다 심화된 자연어 처리에 대한 연습 챕터입니다.
 
 6. [챗봇 만들기](./6.CHATBOT)
-7. [미세 조정 학습]()
+7. [미세 조정 학습](./7.PRETRAIN_METHOD)
 
 
 ## 문의사항 (Inquiries)
