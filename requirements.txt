@@ -6,7 +6,7 @@ seaborn
 matplotlib 
 nltk 
 tqdm 
-transformers 
+transformers==2.11.0
 mxnet 
 gluonnlp 
 sklearn 
