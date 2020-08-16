@@ -7,8 +7,9 @@ matplotlib
 nltk 
 tqdm 
 transformers==2.11.0
-mxnet 
-gluonnlp 
+sentencepiece==0.1.85
+mxnet==1.6.0
+gluonnlp ==0.9.1
 sklearn 
 wordcloud
 gensim
