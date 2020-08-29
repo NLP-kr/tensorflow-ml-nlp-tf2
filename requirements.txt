@@ -5,7 +5,8 @@ html5lib
 seaborn 
 matplotlib 
 nltk 
-tqdm 
+tqdm
+seqeval 
 transformers==2.11.0
 sentencepiece==0.1.85
 mxnet==1.6.0
