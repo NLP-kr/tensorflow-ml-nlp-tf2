@@ -15,6 +15,5 @@
 
 ## 챗봇 모델
 
-- [RNN 기반의 Seq2Seq 모델](./6.4 seq2seq.ipynb)
-
-- [Transformer 기반의 Seq2Seq 모델](./6.5 transformer.ipynb)
+- [RNN 기반의 Seq2Seq 모델](./6.4.seq2seq.ipynb)
+- [Transformer 기반의 Seq2Seq 모델](./6.5.transformer.ipynb)
