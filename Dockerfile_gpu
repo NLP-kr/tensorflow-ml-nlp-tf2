@@ -2,7 +2,7 @@ FROM tensorflow/tensorflow:2.2.0-gpu
 MAINTAINER taekyoon <tgchoi03@gmail.com>
 
 RUN apt-get update -y \
-&& apt-get install -y wget language-pack-ko openjdk-8-jdk curl git-core locales
+&& apt-get install -y wget unzip language-pack-ko openjdk-8-jdk curl git-core locales
 
 RUN apt-get install -y locales language-pack-ko
 ENV LANG ko_KR.UTF-8

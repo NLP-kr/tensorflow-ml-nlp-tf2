@@ -8,11 +8,9 @@
 
   - [tf.keras.layers](./2.1.1.tf.keras.layers.ipynb)
   
-  - [tf.data](./2.1.2%20tf.data.ipynb)
+  - [TensorFlow 2.0](./2.1.2.tensorflow2.ipynb)
   
-  - [tf.estimator](./2.1.3.estimator.ipynb)
-  
-- [사이킷-런(Sklearn)](./2.2.sklearn.ipynb)
+- [사이킷런(Sklearn)](./2.2.sklearn.ipynb)
 
 - [넘파이(Numpy)](./2.4.1.numpy.ipynb)
 

@@ -20,9 +20,9 @@
 
 - [Random Forest 모델](./4.1.5%20Random%20Forest.ipynb)
 
-- [RNN 모델](./4.1.6%20RNN%20Classification_tf2.ipynb)
+- [RNN 모델](./4.1.6%20RNN%20Classification.ipynb)
 
-- [CNN 모델](./4.1.7.CNN_Classification_tf2.ipynb)
+- [CNN 모델](./4.1.7.CNN_Classification.ipynb)
 
 
 ### 한글 데이터
