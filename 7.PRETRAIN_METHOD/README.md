@@ -21,16 +21,16 @@
 - [Naver NLP Challenge Dataset](https://github.com/naver/nlp-challenge)
 - [KorQuAD 1.0](https://korquad.github.io/KorQuad%201.0/)
 
-### 실습 내용
+## 실습 내용
 
-#### 모델 실습을 위한 데이터 분석
+### 모델 실습을 위한 데이터 분석
 
 - [KorNLI 데이터 분석](./7.2.2.KorNLI_EDA.ipynb)
 - [KorNER 데이터 분석](./7.2.3.NER_EDA.ipynb)
 - [KorSTS 데이터 분석](./7.2.4.KorSTS_EDA.ipynb)
 - [KorQuAD 데이터 분석](./7.2.5.KorQuAD_EDA.ipynb)
 
-#### 버트를 활용한 모델 실습
+### 버트를 활용한 모델 실습
 - [버트를 활용한 한국어 텍스트 분류 모델](./7.2.1.bert_finetune_NSMC.ipynb)
 - [버트를 활용한 한국어 자연어 추론 모델](./7.2.2.bert_finetune_KorNLI.ipynb)
 - [버트를 활용한 한국어 개체명 인식 모델](./7.2.3.bert_finetune_NER.ipynb)
