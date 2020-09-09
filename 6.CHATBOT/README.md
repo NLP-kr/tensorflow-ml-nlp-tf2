@@ -1,6 +1,6 @@
 # 6. 챗봇 만들기
 
-이제 마지막으로 자연어 생성 (Natural Language Generation)을 다뤄보도록 합시다.
+이제 자연어 생성 (Natural Language Generation)을 다뤄보도록 합시다.
 
 여러분이 배웠던 모델링을 바탕으로 Seq2Seq (Sequence to Sequence) 모델을 가지고 챗봇을 만들게 됩니다.
 
