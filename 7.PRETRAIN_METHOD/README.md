@@ -37,7 +37,7 @@
 - [버트를 활용한 한국어 텍스트 유사도 모델](./7.2.4.bert_finetune_KorSTS.ipynb)
 - [버트를 활용한 한국어 기계 독해 모델](./7.2.5.bert_finetune_KorQuAD.ipynb)
 
-#### GPT2를 활용한 모델 실습
+### GPT2를 활용한 모델 실습
 - [GPT2를 활용한 한국어 언어 생성 모델](./7.4.1.gpt2_finetune_LM.ipynb)
 - [GPT2를 활용한 한국어 텍스트 분류 모델](./7.4.2.gpt2_finetune_NSMC.ipynb)
 - [GPT2를 활용한 한국어 자연어 추론 모델](./7.4.3.gpt2_finetune_KorNLI.ipynb)
