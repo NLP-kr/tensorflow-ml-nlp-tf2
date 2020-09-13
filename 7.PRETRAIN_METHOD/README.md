@@ -4,6 +4,8 @@
 
 여기서 활용하는 모델은 BERT라는 모델과 GPT2라는 모델을 활용합니다.
 
+실습 자원의 없는 경우 [Colab 실습 저장소의 실습 자료](https://github.com/NLP-kr/tensorflow-ml-nlp-tf2-colab)를 이용해주시기 바랍니다.
+
 ## 실습 자원
 
 본 장에서 활용하게 될 모델과 데이터 셋 입니다.
