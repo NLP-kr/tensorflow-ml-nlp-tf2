@@ -61,7 +61,8 @@ Docker 환경 사용시 19.03 이후 버전을 사용하길 권장합니다.
 ## Colab 실습
 
 Colab 실습은 7장에 한하여 별도 저장소를 공개하였습니다. 
-[링크](https://github.com/NLP-kr/tensorflow-ml-nlp-tf2-colab)
+
+- [저장소 링크](https://github.com/NLP-kr/tensorflow-ml-nlp-tf2-colab)
 
 ## 문의사항 (Inquiries)
 [Pull Request](https://github.com/NLP-kr/tensorflow-ml-nlp-tf2/pulls)는 언제든 환영입니다.
@@ -73,4 +74,4 @@ Colab 실습은 7장에 한하여 별도 저장소를 공개하였습니다.
 ChangWookJun / @changwookjun (changwookjun@gmail.com)  
 Taekyoon  / @taekyoon (tgchoi03@gmail.com)  
 JungHyun Cho  / @JungHyunCho (reniew2@gmail.com)  
-Ryan S. Shin / @aiscientist ()
+Ryan S. Shin / @aiscientist (sungjin7127@gmail.com)
