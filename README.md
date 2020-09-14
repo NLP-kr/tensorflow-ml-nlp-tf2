@@ -1,4 +1,8 @@
-# NLPBOOK (개정판)
+**텐서플로우와 머신러닝으로 시작하는 자연어처리 첫번째 책은 아래 링크를 참고해주시기 바랍니다.** 
+
+**첫번째 책 링크: https://github.com/NLP-kr/tensorflow-ml-nlp**
+
+# NLPBOOK (두번째 책)
 
 텐서플로2와 머신러닝으로 시작하는 자연어처리(로지스틱회귀부터 BERT와 GPT2까지)  
 <p align="center">
