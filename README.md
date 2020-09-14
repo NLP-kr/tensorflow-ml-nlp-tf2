@@ -71,6 +71,7 @@ Colab 실습은 7장에 한하여 별도 저장소를 공개하였습니다.
 **이슈를 확인하기 전에 Wiki에 도큐먼트 먼저 보시고 이슈에 글을 남겨주세요!
 
 ## 저자 (Authors)
+[![](https://sourcerer.io/fame/williamFalcon/pytorchlightning/pytorch-lightning-bolts/images/0)](https://avatars2.githubusercontent.com/u/20633305?s=460&u=23b3600120e33572fd8c9da2ff829117126635a4&v=4)
 ChangWookJun / @changwookjun (changwookjun@gmail.com)  
 Taekyoon  / @taekyoon (tgchoi03@gmail.com)  
 JungHyun Cho  / @JungHyunCho (reniew2@gmail.com)  
