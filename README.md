@@ -2,6 +2,12 @@
 
 **첫번째 책 링크: https://github.com/NLP-kr/tensorflow-ml-nlp**
 
+**중요!: GPT2 모델 다운로드 링크가 변경될 예정입니다. 모델 다운로드는 다음 링크를 확인하시기 바랍니다.**
+```
+wget https://github.com/NLP-kr/tensorflow-ml-nlp-tf2/releases/download/v1.0/gpt_ckpt.zip -O gpt_ckpt.zip
+```
+
+
 # NLPBOOK
 
 텐서플로2와 머신러닝으로 시작하는 자연어처리(로지스틱회귀부터 BERT와 GPT2까지)  
