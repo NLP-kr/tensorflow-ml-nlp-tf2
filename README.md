@@ -2,7 +2,7 @@
 
 **첫번째 책 링크: https://github.com/NLP-kr/tensorflow-ml-nlp**
 
-**중요!: GPT2 모델 다운로드 링크가 변경될 예정입니다. 모델 다운로드는 다음과 같이 받아주시기 바랍니다.**
+***공지: GPT2 모델 다운로드 링크가 변경될 예정입니다. 모델 다운로드는 다음과 같이 받아주시기 바랍니다.**
 ```
 wget https://github.com/NLP-kr/tensorflow-ml-nlp-tf2/releases/download/v1.0/gpt_ckpt.zip -O gpt_ckpt.zip
 ```
