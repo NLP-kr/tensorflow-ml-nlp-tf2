@@ -27,6 +27,7 @@ conda create -n {사용할 환경 이름} python=3.6
 conda activate {사용할 환경 이름}
 pip install -r requirements.txt
 ```
+** 추가로 본 실습에서는 `tensorflow==2.2.0` 환경에서 작동이 가능한 것을 테스트 했습니다.
 
 만약 설치가 정상적으로 진행되지 않으신다면 python 3.6을 설치하여 진행해주시기 바랍니다.
 ```
