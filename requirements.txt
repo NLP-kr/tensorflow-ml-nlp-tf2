@@ -15,3 +15,5 @@ sklearn==0.19.1
 wordcloud
 gensim
 xgboost
+wget==3.2
+tokenizers==0.8.1.rc1
