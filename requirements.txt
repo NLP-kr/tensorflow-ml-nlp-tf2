@@ -4,14 +4,14 @@ pandas
 html5lib 
 seaborn 
 matplotlib 
-nltk 
+nltk==3.3 
 tqdm
 seqeval 
 transformers==2.11.0
 sentencepiece==0.1.85
 mxnet==1.6.0
 gluonnlp==0.9.1
-sklearn 
+sklearn==0.19.1
 wordcloud
 gensim
 xgboost
