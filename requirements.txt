@@ -1,19 +1,24 @@
-numpy 
+numpy<=1.16.2           # to avoid issue https://stackoverflow.com/questions/55890813/how-to-fix-object-arrays-cannot-be-loaded-when-allow-pickle-false-for-imdb-loa
 jupyter 
 pandas 
 html5lib 
 seaborn 
-matplotlib 
+matplotlib<3.3          # to avoid MatplotlibDeprecationWarning
 nltk==3.3 
 tqdm
 seqeval 
-transformers==2.11.0
+transformers>=2.11.0
 sentencepiece==0.1.85
 mxnet==1.6.0
 gluonnlp==0.9.1
-sklearn==0.19.1
+scikit-learn>=0.19.1    # package name registered in PyPI.org
 wordcloud
 gensim
 xgboost
 wget==3.2
 tokenizers==0.8.1.rc1
+tensorflow==2.0.3
+h5py<3.0.0              # to avoid issue https://github.com/keras-team/keras/issues/14265
+konlpy
+beautifulsoup4
+kaggle
