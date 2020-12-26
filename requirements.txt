@@ -4,7 +4,7 @@ pandas
 html5lib 
 seaborn 
 matplotlib<3.3          # to avoid MatplotlibDeprecationWarning
-nltk==3.3 
+nltk==3.4.5 
 tqdm
 seqeval 
 transformers>=2.11.0
