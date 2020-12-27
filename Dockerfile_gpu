@@ -28,9 +28,9 @@ RUN pip install konlpy cmake
 
 # RUN pip install gensim soynlp soyspacing bokeh networkx selenium lxml pyldavis sentencepiece
 
-COPY requirements.txt .
-RUN pip install -r requirements.txt
-RUN rm requirements.txt
+COPY requirements_gpu.txt .
+RUN pip install -r requirements_gpu.txt
+RUN rm requirements_gpu.txt
 RUN pip install setGPU
 # RUN pip install numpy jupyter pandas html5lib seaborn matplotlib nltk tqdm transformers mxnet gluonnlp sklearn wordcloud
 RUN python -c 'import nltk; nltk.download("punkt"); nltk.download("stopwords")'
