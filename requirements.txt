@@ -7,7 +7,7 @@ matplotlib<3.3          # to avoid MatplotlibDeprecationWarning
 nltk==3.3 
 tqdm
 seqeval 
-transformers>=2.11.0
+transformers==3.0.2
 sentencepiece==0.1.85
 mxnet==1.6.0
 gluonnlp==0.9.1
@@ -16,7 +16,7 @@ wordcloud
 gensim
 xgboost
 wget==3.2
-# tokenizers==0.8.1.rc1
+tokenizers==0.8.1.rc1
 tensorflow==2.0.3
 h5py<3.0.0              # to avoid issue https://github.com/keras-team/keras/issues/14265
 konlpy
