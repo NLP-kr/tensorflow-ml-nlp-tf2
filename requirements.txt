@@ -16,7 +16,7 @@ wordcloud
 gensim
 xgboost
 wget==3.2
-tokenizers==0.8.1.rc1
+# tokenizers==0.8.1.rc1
 tensorflow==2.0.3
 h5py<3.0.0              # to avoid issue https://github.com/keras-team/keras/issues/14265
 konlpy
