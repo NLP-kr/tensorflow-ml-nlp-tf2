@@ -9,7 +9,7 @@ tqdm
 seqeval 
 transformers==3.0.2
 sentencepiece==0.1.85
-mxnet==1.6.0
+mxnet
 gluonnlp==0.9.1
 scikit-learn>=0.19.1    # package name registered in PyPI.org
 wordcloud
