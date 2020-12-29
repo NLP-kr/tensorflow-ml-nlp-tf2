@@ -24,6 +24,20 @@ wget https://github.com/NLP-kr/tensorflow-ml-nlp-tf2/releases/download/v1.0/gpt_
 
 ## 설치방법 (Environments)
 
+해당 자연어처리 예제에 대한 다양한 개발 환경 지원을 위해 도커(Docker) 가이드를 추가하였습니다.
+
+향후 예제에 대한 실습 패키지 업데이트 변화에 대응하기 위해 도커 사용을 권장 합니다.
+
+## Jupyter Docker 실행 (권장)
+
+Docker 환경 사용시 19.03 이후 버전을 사용하길 권장합니다.
+
+- `bash build_jupyter_cpu.sh` 또는 `bash build_jupyter_gpu.sh`를 실행하면 docker image을 생성합니다.
+- `bash exec_jupyter_cpu.sh` 또는 `bash exec_jupyter_gpu.sh`를 실행하면 docker환경에서 jupyter가 실행됩니다.
+-  jupyter 실행 포트번호는 8889 이므로 해당 포트번호에 대해서 사용이 가능해야 합니다.
+
+## 아나콘다 설치
+
 아나콘다 설치 파일을 못찾으셨다면 다음 링크에서 다음 버전을 찾아 다운받으세요
 
 ```
@@ -57,14 +71,6 @@ conda install python=3.6
 <!-- >> - `tensorflow-gpu>=1.13` 의 경우 `CUDA 10.0`을 설치해주시기 바랍니다. -->
 <!-- >> - `tensorflow-gpu>=1.5,<=1.12` 의 경우 `CUDA 9.0`을 설치해주시기 바랍니다. -->
 <!-- >> - `tensorflow-gpu>=1.0,<=1.4` 의 경우 `CUDA 8.0`을 설치해주시기 바랍니다. -->
-
-## Jupyter Docker 실행
-
-Docker 환경 사용시 19.03 이후 버전을 사용하길 권장합니다.
-
-- `bash build_jupyter_cpu.sh` 또는 `bash build_jupyter_gpu.sh`를 실행하면 docker image을 생성합니다.
-- `bash exec_jupyter_cpu.sh` 또는 `bash exec_jupyter_gpu.sh`를 실행하면 docker환경에서 jupyter가 실행됩니다.
--  jupyter 실행 포트번호는 8889 이므로 해당 포트번호에 대해서 사용이 가능해야 합니다.
 
 ## 목차 (Table of Contents)
 
