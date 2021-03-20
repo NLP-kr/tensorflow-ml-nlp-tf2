@@ -26,7 +26,7 @@ wget https://github.com/NLP-kr/tensorflow-ml-nlp-tf2/releases/download/v1.0/gpt_
 ### 데이터
 
 - [KorNLU Dataset](https://github.com/kakaobrain/KorNLUDatasets)
-- [Naver NLP Challenge Dataset](https://github.com/naver/nlp-challenge)
+- [Naver NLP Challenge Dataset](https://github.com/monologg/korean-ner-pytorch/tree/master/data)
 - [KorQuAD 1.0](https://korquad.github.io/KorQuad%201.0/)
 
 ## 실습 내용
