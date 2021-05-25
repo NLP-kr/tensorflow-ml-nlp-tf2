@@ -42,7 +42,7 @@ wget https://github.com/NLP-kr/tensorflow-ml-nlp-tf2/releases/download/v1.0/gpt_
 
 ### 5 (전)
 - (코드 없음)
-- 
+
 ### 6 (신)
 - (코드 없음)
 
