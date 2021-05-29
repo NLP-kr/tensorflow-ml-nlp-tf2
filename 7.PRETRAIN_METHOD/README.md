@@ -31,21 +31,6 @@ wget https://github.com/NLP-kr/tensorflow-ml-nlp-tf2/releases/download/v1.0/gpt_
 
 ## 실습 내용
 
-### 2 (조)
-- (코드 없음)
-
-### 3 (조)
-- (코드 없음)
-
-### 4 (전)
-- (코드 없음)
-
-### 5 (전)
-- (코드 없음)
-
-### 6 (신)
-- (코드 없음)
-
 ### 7.2 버트를 활용한 미세 조정 학습
 **7.2.1 버트를 활용한 한국어 텍스트 분류 모델**
 - 모델 실습: [7.2.1.bert_finetune_NSMC.ipynb](./7.2.1.bert_finetune_NSMC.ipynb)
