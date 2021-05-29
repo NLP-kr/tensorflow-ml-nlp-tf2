@@ -10,19 +10,20 @@
 
 영어 데이터는 캐글(Kaggle)의 "Bag of Words with bag of popcorns"를 가지고 실습하게 됩니다.
 
-#### 실습 내용
+## 실습 내용
 
-- [데이터 EDA 및 전처리](./4.1.2.EDA&preprocessing.ipynb)
+### 4.1 영어 텍스트 분류
+- [데이터 분석 및 전처리](./4.1.2.EDA&preprocessing.ipynb)
 
-- [TF-IDF를 활용한 선형회귀모델](./4.1.4%20Linear%20Regression%20with%20TF-IDF.ipynb)
+- [TF-IDF를 활용한 모델 구현](./4.1.4%20Linear%20Regression%20with%20TF-IDF.ipynb)
 
-- [Word2Vec을 활용한 선형회귀모델](./4.1.4%20Linear%20Regression%20with%20Word2Vec.ipynb)
+- [Word2Vec을 활용한 모델 모델](./4.1.4%20Linear%20Regression%20with%20Word2Vec.ipynb)
 
-- [Random Forest 모델](./4.1.5%20Random%20Forest.ipynb)
+- [랜덤 포레스트 분류 모델](./4.1.5%20Random%20Forest.ipynb)
 
-- [RNN 모델](./4.1.6%20RNN%20Classification.ipynb)
+- [순환 신경망 분류 모델](./4.1.6%20RNN%20Classification.ipynb)
 
-- [CNN 모델](./4.1.7.CNN_Classification.ipynb)
+- [컨볼루션 신경망 분류 모델](./4.1.7.CNN_Classification.ipynb)
 
 
 ### 한글 데이터
@@ -31,6 +32,7 @@
 
 #### 실습 내용
 
-- [데이터 EDA 및 전처리](./4.2.2.EDA&preprocessing.ipynb)
+### 4.2 한글 텍스트 분류
+- [데이터 전처리 및 분석](./4.2.2.EDA&preprocessing.ipynb)
 
 - [모델링](./4.2.3.Korea%20Sentiment%20Modeling.ipynb)
