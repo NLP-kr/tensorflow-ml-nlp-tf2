@@ -10,15 +10,16 @@
 
 데이터는 캐글(Kaggle)의 "Quora Question Pairs"를 가지고 실습하게 됩니다.
 
-### 실습 내용
+## 실습 내용
 
-- [데이터 EDA 및 전처리](./5.2.EDA&preprocessing.ipynb)
+- [5.2 데이터 분석과 전처리](./5.2.EDA&preprocessing.ipynb)
 
-- [XG 부스팅을 활용한 유사도 모델](./5.3.1.XGboost.ipynb)
+### 5.3 모델링
+- [XG 부스트 텍스트 유사도 분석 모델](./5.3.1.XGboost.ipynb)
 
-- [CNN을 활용한 유사도 모델](./5.3.2.Quora_CNN.ipynb)
+- [CNN 텍스트 유사도 분석 모델](./5.3.2.Quora_CNN.ipynb)
 
-- [MaLSTM을 활용한 유사도 모델](./5.3.3_Quora_LSTM.ipynb)
+- [MaLSTM - 모델 구현](./5.3.3_Quora_LSTM.ipynb)
 
 
 <!--
