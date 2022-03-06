@@ -24,8 +24,7 @@ wget https://github.com/NLP-kr/tensorflow-ml-nlp-tf2/releases/download/v1.0/gpt_
 ## 실습 내용
 
 ### 8.3 퓨샷 러닝
-- [퓨샷 러닝을 활용한 텍스트 분류](./)
+- [퓨샷 러닝을 활용한 텍스트 분류](./8.3.gpt2_fewshot_NSMC.ipynb)
 
 ### 8.4  피-튜닝
-- [피-튜닝을 활용한 텍스트 분류](./)
-
+- [피-튜닝을 활용한 텍스트 분류](./8.4.gpt2_p_tuning_NSMC.ipynb)
