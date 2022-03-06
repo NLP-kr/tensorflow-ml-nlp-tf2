@@ -2,7 +2,7 @@
 
 **첫번째 책 링크: https://github.com/NLP-kr/tensorflow-ml-nlp**
 
-***공지: GPT2 모델 다운로드 링크가 변경될 예정입니다. 모델 다운로드는 다음과 같이 받아주시기 바랍니다.**
+***공지: GPT2 모델은 더 이상 Dropbox에서 지원하지 않습니다. 모델 다운로드는 다음과 같이 받아주시기 바랍니다.**
 ```
 wget https://github.com/NLP-kr/tensorflow-ml-nlp-tf2/releases/download/v1.0/gpt_ckpt.zip -O gpt_ckpt.zip
 ```
@@ -89,10 +89,11 @@ conda install python=3.6
 
 6. [챗봇 만들기](./6.CHATBOT)
 7. [미세 조정 학습](./7.PRETRAIN_METHOD)
+8. [GPT3](./8.GPT3)
 
 ## Colab 실습
 
-Colab 실습은 7장에 한하여 별도 저장소를 공개하였습니다. 
+Colab 실습은 7, 8장에 한하여 별도 저장소를 공개하였습니다. 
 
 - [저장소 링크](https://github.com/NLP-kr/tensorflow-ml-nlp-tf2-colab)
 
