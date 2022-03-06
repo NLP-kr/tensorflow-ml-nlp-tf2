@@ -1,6 +1,6 @@
 # 7. 사전 학습 모델
 
-마지막으로 사전 학습 (Pretrained) 모델과 미세 조정 (Fine-tuned) 학습에 대해서 알아보도록 합시다.
+사전 학습 (Pretrained) 모델과 미세 조정 (Fine-tuned) 학습에 대해서 알아보도록 합시다.
 
 여기서 활용하는 모델은 BERT라는 모델과 GPT2라는 모델을 활용합니다.
 
@@ -17,7 +17,7 @@
 - [Ko-GPT2 모델 깃허브 저장소](https://github.com/SKT-AI/KoGPT2)
 
 - **중요**: GPT2 모델 저장소가 변경 되었습니다. 모델 다운로드는 다음 방식으로 다운로드 받으시면 됩니다. 
-   - 현 GPT2 모델 링크는(Dropbox 저장소) 유효기간 이슈가 발생하여 깃허브 릴리즈에 저장하였습니다.
+   - 기존 GPT2 모델 링크는(Dropbox 저장소) 더 이상 지원하지 않습닏..
 ```
 wget https://github.com/NLP-kr/tensorflow-ml-nlp-tf2/releases/download/v1.0/gpt_ckpt.zip -O gpt_ckpt.zip
 ```
