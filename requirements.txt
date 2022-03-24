@@ -1,4 +1,3 @@
-numpy<=1.16.2           # to avoid issue https://stackoverflow.com/questions/55890813/how-to-fix-object-arrays-cannot-be-loaded-when-allow-pickle-false-for-imdb-loa
 jupyter 
 pandas 
 html5lib 
@@ -22,3 +21,4 @@ h5py<3.0.0              # to avoid issue https://github.com/keras-team/keras/iss
 konlpy
 beautifulsoup4
 kaggle
+numpy<=1.16.2           # to avoid issue https://stackoverflow.com/questions/55890813/how-to-fix-object-arrays-cannot-be-loaded-when-allow-pickle-false-for-imdb-loa
